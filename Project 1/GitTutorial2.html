@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset = "utf-8">
-	<link href="css/GitHomepage.css" rel="stylesheet"/>
+	<link href="css/GitHomepage2.css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 </head>
 
@@ -22,17 +22,33 @@
 	
 	<div id="Step1Content" class="Content">
 		
-		<h1> Step 4:  </h1>
+		<h1> Step 4: Getting Ready to Commit  </h1>
 		
-		<div id="S4">
-		
-		</div>
+		<p>
+			Now that you have add files to your projects repository, you will need to commit these new changes to GitHub. <br/>
+			First you will want to check your changes and make sure they are correct.  You will see three types of changes recorded by GitHub. New addition changes which is new code added and will appear as green.
+			Deleted Changes which is code deleted and will appear as red. No changes or unchanged code will have not color. <br/>
+			Once you have check to make sure the changes are correct, add a title for the commit and a description of what you did in this commit.<br/>
+			You will input this bellow the files changes as seen in the picture below.
+		</p>
 		
 	</div>
 	
 	<div id="Step2Content" class="Content" >
-		<h1> Step 5: </h1>
+		<h1> Step 5: Making Your First Commit </h1>
+
+		<p>
+			After writing a summary and title for your commit, you are now read to commit the files. There are many ways to commit to GitHub. <br/>The first way is to press the commit to master button and do it that way.
+			However some times you have a lot of changes and the button is not the best way so you will need to use the git shell which you can get to by clicking the gear for the settings while you repository is open
+			in the GitHub window.<br/> Once you open the shell input these 4 command lines bellow:
+		</p>
 		
+		<ol>
+			<li> git status </li>
+			<li> git add . </li>
+			<li> git commit -m"Commit Title here" </li>
+			<li> git push origin-master </li>
+		<ol>
 	</div>
 	
 	<div id= "Step3Content" class="Content">

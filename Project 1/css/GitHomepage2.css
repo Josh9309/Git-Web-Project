@@ -12,6 +12,9 @@ div{
 	overflow: auto;
 	text-align:center;
 }
+img{
+	max-width: 600px;
+}
 #Header{
 	position: relative;
 	left: 80px;
@@ -31,15 +34,14 @@ div{
 	display:block;
 	font-size:14pt;
 	width:15%;
-	height:374px;
 	background-color: dimgrey;
-	float: right;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	right: 20px;
-	top: 260px;
+	left: 20px;
+	top: 240px;
 	box-shadow: 10px 8px 7px black;
 	overflow: hidden;
+	z-index: 1;
 }
 #Step1Content{
 	display: block;
@@ -100,6 +102,9 @@ div{
 	margin-bottom: 15px;
 	text-align:center;
 }
+.Content img{
+	width:90%;
+}
 #S1 {
 	background-color:#660033;
 	color:white;
@@ -117,7 +122,6 @@ div{
 	padding:0;
 }
 .NavBar li{
-	position: relative;
 	width: 100%;
 	text-align:center;
 	border-bottom:2px solid black;
@@ -153,7 +157,7 @@ div{
 
 #Step1Content ul{
 	position: relative;
-	left: 180px;
+	left: 30%;
 }
 
 #Step1Content img{
@@ -193,8 +197,9 @@ div{
 	body
 	{
 		width: 100%;
-		margin: none;
+		margin: 0 0 0 0;
 	}
+	
 	
 	#Header, #Step1Content, #step2Content, #Step3Content, .foot{
 		left:0px;
@@ -222,6 +227,10 @@ div{
 		left: 0px;
 	}
 	
+	#Step1Content ul{
+		left: 5%;
+	}
+	
 	#Step2Content{
 		width:85%;
 		left: 0px;
@@ -231,6 +240,10 @@ div{
 		width:85%;
 		left: 0px;
 	}
-	
-	
+}
+
+@media screen and (max-width: 340px){
+	#Header{
+		height: 120px;
+	}
 }
