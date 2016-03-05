@@ -2,7 +2,7 @@ body{
 	font-size: 0pt;
 	background-image: url("../media/gitBackground.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	width:80%;
 	margin:auto;
 }
@@ -10,6 +10,7 @@ div{
 	display: inline-block;
 	font-size: 16pt;
 	overflow: auto;
+	text-align:center;
 }
 #Header{
 	position: relative;
@@ -25,72 +26,139 @@ div{
 	padding: 0 0 0 0;
 }
 .NavBar{
+	position: fixed;
 	display:block;
 	font-size:14pt;
 	width:15%;
-	height:1100px;
+	height:40%;
 	background-color: green;
 	float: right;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+	right: 20px;
+	top: 260px;
+	box-shadow: 10px 8px 7px black;
 }
 #Step1Content{
 	display: block;
+	position: relative;
+	left: 130px;
 	width: 70%;
 	background-color: red;
 	margin: 20px 20px 20px 20px;
 	padding: 15px 15px 15px 15px;
-	box-shadow: 7px 3px 5px black;
+	box-shadow: 10px 10px 6px black;
 	font-size:14pt;
+	overflow:hidden;
 }
 #Step2Content{
-	width: 85%;
+	width: 70%;
+	position: relative;
+	left: 130px;
 	background-color: yellow;
-	margin: 0 0 0 0;
+	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
 	font-size:14pt;
 	overflow: hidden;
 }
 #Step3Content{
-	width: 85%;
-	
+	display: block;
+	position: relative;
+	left: 130px;
+	width: 70%;
 	background-color: LightGray;
 	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
 	font-size:14pt;
 	overflow: hidden;
 }
 .foot{
-	width: 100%;
-	height:100px;
+	position: relative;
+	left: 80px;
+	width: 80%;
+	height:60px;
+	margin: 15px 30px 30px 30px;
+	border: black solid 5px;
+	text-align: center;
 	background-color: blue;
+	overflow: hidden;
 }
 
+#Step1Content p, h1, img{
+	margin: auto;
+}
 #Step1Content p{
-	width: 42.5%;
+	width: 90%;
+	
+}
+#Step1Content ul{
+	position: relative;
+	left: 180px;
 }
 
 #Step1Content img{
-	float:right;
 	height: 300px;
 }
+
+#Step1Content li{
+	text-align: left;
+}
+
+#Step2Content p, h1, img{
+	margin: auto;
+}
 #Step2Content p{
-	width: 42.5%;
+	width: 90%;
 }
 #Step2Content img{
 	position: relative;
-	right: 10px;
-	bottom: 75px;
-	float:right;
 	height:300px;
 }
+#Step3Content p, h1, img{
+	margin: auto;
+}
 #Step3Content p{
-	width: 42.5%;
-	height: 200px;
-	overflow: scroll;
+	width: 90%;
 }
 #Step3Content img{
 	position:relative;
-	right:10px;
-	bottom:75px;
-	float:right;
 	height:275px;
+}
+
+/* Media Queries */
+@media screen and (max-width:480px){
+	body
+	{
+		width: 100%;
+		margin: none;
+	}
+	
+	#Header, #Step1Content, #step2Content, #Step3Content, .foot{
+		left:0px;
+	}
+	
+	.NavBar{
+		position:relative;
+		right:90px;
+		top:0px;
+	}
+	
+	#Step1Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	#Step2Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	#Step3Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	
 }
