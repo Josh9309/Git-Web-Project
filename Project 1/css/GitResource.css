@@ -1,0 +1,268 @@
+body{
+	font-size: 0pt;
+	background-image: url("../media/gitBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 110% 110%;
+	width:80%;
+	margin:auto;
+}
+div{
+	display: inline-block;
+	font-size: 16pt;
+	overflow: auto;
+	text-align:center;
+}
+img{
+	max-width: 600px;
+}
+#Header{
+	position: relative;
+	left: 80px;
+	overflow: hidden;
+	font-size:14pt;
+	width: 80%;
+	height: 80px;
+	background-color:#660033;
+	color:white;
+	border: black solid 5px;
+	text-align: center;
+	margin: 15px 30px 30px 30px;
+	padding: 0 0 0 0;
+}
+.NavBar{
+	position: fixed;
+	display:block;
+	font-size:14pt;
+	width:15%;
+	background-color: dimgrey;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	left: 20px;
+	top: 20%;
+	box-shadow: 10px 8px 7px black;
+	overflow: hidden;
+	z-index: 1;
+}
+#Step1Content{
+	display: block;
+	position: relative;
+	left: 130px;
+	width: 70%;
+	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
+	font-size:14pt;
+	overflow:hidden;
+}
+#Step2Content{
+	width: 70%;
+	position: relative;
+	left: 130px;
+	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
+	font-size:14pt;
+	overflow: hidden;
+}
+#Step3Content{
+	display: block;
+	position: relative;
+	left: 130px;
+	width: 70%;
+	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
+	font-size:14pt;
+	overflow: hidden;
+}
+#GitWebProjectContent{
+	display: block;
+	position: relative;
+	left: 130px;
+	width: 70%;
+	margin: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 6px black;
+	font-size:14pt;
+	overflow: hidden;
+}
+.foot{
+	position: relative;
+	left: 80px;
+	width: 80%;
+	height:60px;
+	margin: 15px 30px 30px 30px;
+	border: black solid 5px;
+	text-align: center;
+	background-color: #660033;
+	color: white;
+	overflow: hidden;
+}
+
+.foot p {
+	box-shadow:none;
+}
+
+.Content{
+	background-color: dimgrey;
+}
+.Content h1, p{
+	background-color:#660033;
+	color:white;
+	box-shadow:5px 5px 6px black;
+	margin-bottom: 15px;
+	text-align:center;
+}
+.Content img{
+	width:90%;
+}
+#S1 {
+	background-color:#660033;
+	color:white;
+	box-shadow:5px 5px 6px black;
+	margin-bottom: 15px;
+	overflow:hidden;
+}
+
+#S1 p{
+	box-shadow: none;
+}
+.NavBar ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.NavBar li{
+	width: 100%;
+	text-align:center;
+	border-bottom:2px solid black;
+}
+.NavBar li:last-child{
+	border-bottom:none;
+}
+.NavBar li a{
+	display: block;
+	padding: 30px 0px 40px;
+	text-decoration:none;
+}
+
+.NavBar li a:hover:not(.active){
+	background-color: #555555;
+	color: white;
+}
+
+.NavBar li a.active{
+	background-color: #660033;
+	color:white;
+}
+
+#Step1Content p, h1, img{
+	margin-bottom: 15px;
+}
+
+#Step1Content p{
+	width: 90%;
+	position: relative;
+	left: 5%;
+}
+
+#Step1Content img{
+	height: 300px;
+}
+
+#Step2Content p, h1, img{
+	margin-bottom: 15px;
+}
+#Step2Content p{
+	width: 90%;
+	position: relative;
+	left: 5%;
+}
+#Step2Content img{
+	position: relative;
+	height:300px;
+}
+#Step3Content p, h1, img{
+	margin-bottom: 15px;
+}
+#Step3Content p{
+	width: 90%;
+	position: relative;
+	left: 5%;
+}
+#Step3Content img{
+	position:relative;
+	height:275px;
+}
+#GitWebProjectContent p, h1, img{
+	margin-bottom: 15px;
+}
+#GitWebProjectContent p{
+	width: 90%;
+	position: relative;
+	left: 5%;
+}
+#GitWebProjectContent img{
+	position:relative;
+	height:275px;
+}
+/* Media Queries */
+@media screen and (max-width:480px){
+	body
+	{
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+	
+	
+	#Header, #Step1Content, #step2Content, #Step3Content, #GitWebProjectContent, .foot{
+		left:0px;
+	}
+	
+	.NavBar{
+		position:relative;
+		right:33px;
+		top:0px;
+		width: 85%;
+		margin-bottom: 30px;
+	}
+	
+	.foot{
+		padding: 0px 0px 0px 0px;
+	}
+	
+	.foot p{
+		position:relative;
+		bottom: 10px;
+	}
+	
+	#Step1Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	#Step1Content ul{
+		left: 5%;
+	}
+	
+	#Step2Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	#Step3Content{
+		width:85%;
+		left: 0px;
+	}
+	
+	#GitWebProjectContent{
+		width:85%;
+		left: 0px;
+	}
+}
+
+@media screen and (max-width: 340px){
+	#Header{
+		height: 120px;
+	}
+}
