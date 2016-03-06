@@ -54,27 +54,7 @@ img{
 	font-size:14pt;
 	overflow:hidden;
 }
-#Step2Content{
-	width: 70%;
-	position: relative;
-	left: 130px;
-	margin: 20px 20px 20px 20px;
-	padding: 15px 15px 15px 15px;
-	box-shadow: 10px 10px 6px black;
-	font-size:14pt;
-	overflow: hidden;
-}
-#Step3Content{
-	display: block;
-	position: relative;
-	left: 130px;
-	width: 70%;
-	margin: 20px 20px 20px 20px;
-	padding: 15px 15px 15px 15px;
-	box-shadow: 10px 10px 6px black;
-	font-size:14pt;
-	overflow: hidden;
-}
+
 .foot{
 	position: relative;
 	left: 80px;
@@ -105,22 +85,7 @@ img{
 .Content img{
 	width:90%;
 }
-#S5 {
-	background-color:#660033;
-	color:white;
-	box-shadow:5px 5px 6px black;
-	margin-bottom: 15px;
-	overflow:hidden;
-}
 
-#S5 p{
-	box-shadow: none;
-}
-#S5 ol{
-	text-align:left;
-	position:relative;
-	left: 35%;
-}
 .NavBar ul{
 	list-style-type:none;
 	margin:0;
@@ -173,30 +138,6 @@ img{
 	text-align: left;
 }
 
-#Step2Content p, h1, img{
-	margin-bottom: 15px;
-}
-#Step2Content p{
-	width: 90%;
-	position: relative;
-	left: 5%;
-}
-#Step2Content img{
-	position: relative;
-	height:300px;
-}
-#Step3Content p, h1, img{
-	margin-bottom: 15px;
-}
-#Step3Content p{
-	width: 90%;
-	position: relative;
-	left: 5%;
-}
-#Step3Content img{
-	position:relative;
-	height:275px;
-}
 
 /* Media Queries */
 @media screen and (max-width:480px){
@@ -207,7 +148,7 @@ img{
 	}
 	
 	
-	#Header, #Step1Content, #step2Content, #Step3Content, .foot{
+	#Header, #Step1Content, .foot{
 		left:0px;
 	}
 	
@@ -237,18 +178,6 @@ img{
 		left: 5%;
 	}
 	
-	#Step2Content{
-		width:85%;
-		left: 0px;
-	}
-	
-	#Step3Content{
-		width:85%;
-		left: 0px;
-	}
-	#S5 ol{
-		left:5%;
-	}
 }
 
 @media screen and (max-width: 340px){
